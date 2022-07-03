@@ -1,11 +1,6 @@
 <?php
 
-$host="localhost";
-$user="root";
-$password="1234"; 
-$db="login";
-
-$conn = mysqli_connect($host,$user,$password,$db);
+include_once("./db.php");
 
 if(isset($_POST['username'])){
     $uname=$_POST['username'];
